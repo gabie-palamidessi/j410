@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="img/favicon2.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding community on a college campus</title>
+
+    <!-- ============================================
+         GOOGLE FONTS
+         - To change fonts, visit fonts.google.com
+         - Replace the font names in the URL and in style.css
+         ============================================ -->
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============================================
+         NAVIGATION: Fixed header with mobile toggle
+         - Change the nav links to match your story sections
+         - The hamburger menu appears on screens under 768px
+         ============================================ -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+            <img src="img/logo1.png" width="75"
+            height="60" alt="Finding community on a college campus">Finding community on a college campus
+        
+            </div>
+            <button class="hamburger" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#photos">Swing Dance</a></li>
+                <li><a href="#audio">Finding home</a></li>
+                <li><a href="#video">DJing</a></li>
+                <li><a href="#infogram">Stats</a></li>
+                <li><a href="#footer">Credits</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION: Full-screen image + headline
+         - Change the background image in style.css
+         - Look for ".hero" in the CSS file
+         - Edit the headline and deck text below
+         ============================================ -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Finding community on a college campus</h1>
+            <p class="deck">On a college campus, discovering where you belong can make the difference between feeling lost and feeling at home.</p>
+            <p class="byline">By Gabriella Palamidessi | May 13, 2026</p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         STORY TEXT SECTION
+         - Write your full story here
+         - Use multiple <p> tags for multiple paragraphs
+         ============================================ -->
+    <section class="section story-text">
+        <p>Walking onto a college campus for the first time, students can be surrounded by thousands of people and still feel alone. This shows why belonging matters: feeling secure, accepted and included. Belonging does not emerge from being around others, but from how people actually engage with a group and communicate.
+</p>
+<p>On college campuses, a student's sense of belonging can shape academic success and mental health, making it essential. According to a study by the National Library of Medicine, feeling a sense of belonging may lead students to <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11156233/" target="_blank">engage more deeply</a> with their studies, leading to persistence and success.</p>
+    </section>
+
+    <!-- ============================================
+         PARALLAX DIVIDER
+         - Change the background image in style.css
+         - Look for ".parallax-1"
+         ============================================ -->
+    <div class="parallax-divider parallax-1"></div>
+
+    <!-- ============================================
+         PHOTOS SECTION: Slideshow gallery
+         - Add/remove <div class="slide"> blocks for each photo
+         - Update the img src and alt text for each photo
+         - The caption text appears below each photo
+         ============================================ -->
+    <section id="photos" class="section">
+        <h2>Cal Poly's Swing Dance Club</h2>
+        <p class="section-intro">The Cal Poly Swing Dance Club has been bringing students together since 1998 with weekly lessons open to all experience levels. More than just a dance club, it's a welcoming community where students can meet new people and learn to swing dance.
+</p>
+        <div class="slideshow">
+            <div class="slide active">
+                <img src="img/1.jpg" alt="Cal Poly swing dancers dancing at the Madonna Inn">
+                <p class="caption">Cal Poly Swing Dance Club hosts social dances and lessons throughout the year, introducing students and community members to swing dancing.</p>
+            </div>
+            <div class="slide">
+                <img src="img/3.jpg" alt="New club members swing dancing in the red-lit ballroom at the Madonna Inn">
+                <p class="caption">Dancers of all experience levels are welcome to the dance floor to learn and practice various swing dance styles, including Lindy Hop, East Coast swing, Balboa, and more.</p>
+            </div>
+            <div class="slide">
+                <img src="img/4.jpg" alt="Emma Stanciu dancing with her partner on the dance floor">
+                <p class="caption">Emma Stanciu, a first-year biology major, is new to the world of swing dancing but encourages everyone to get on the dance floor and try it.</p>
+            </div>
+            <div class="slide">
+                <img src="img/6.jpg" alt="Couples swing dancing on the dance floor">
+                <p class="caption">Not everyone at the event came to dance; many came just to watch. One visitor described swing dancing as “generational” and something special to witness.</p>
+            </div>
+            <div class="slide">
+                <img src="img/7.jpg" alt="Swing dancers in jeans and casual clothes dancing in the Madonna Inn ballroom">
+                <p class="caption">Guests arrived in everything from jeans and T-shirts to vintage-inspired outfits, blending casual style with classic swing flair.
+</p>
+            </div>
+        </div>
+        <div class="slide-controls">
+            <button onclick="changeSlide(-1)">&#8592; Prev</button>
+            <span class="slide-counter">
+                <span id="current-slide">1</span> / <span id="total-slides">3</span>
+            </span>
+            <button onclick="changeSlide(1)">Next &#8594;</button>
+        </div>
+    </section>
+<section class="section story-text">
+        <p>When entering college, many students struggle to find their people and often experience loneliness. For many, the challenge begins with the transition into a completely new environment. 
+<blockquote>“Moving away from home creates a challenging transition for many students,” said Noah Chalfin, a college counselor and first-year students coordinator at Cal Poly San Luis Obispo. “I think it can kind of interfere with one's ability to develop that sense of belonging.” 
+</blockquote>
+</p>
+<p>Chalfin believes that it's important for students to find where they fit in. “I think having that sense of belonging is going to support improved academic performance, and overall an improved mental health,” he said, “it helps support a healthy social engagement and interaction.”</p>
+    </section>
+    <!-- ============================================
+         PARALLAX DIVIDER
+         - Change the background image in style.css
+         - Look for ".parallax-2"
+         ============================================ -->
+    <div class="parallax-divider parallax-2"></div>
+
+    <!-- ============================================
+         AUDIO SECTION: Clickable speaker images
+         - For each speaker you need TWO image files:
+             img/rollover/1.gif  (animated, shown by default)
+             img/rollover/1.jpg  (still, shown on hover)
+         - Update the audio src to your mp3 files
+         - Update the alt text and label to the speaker's name
+         - Click image to play | Double-click to pause
+         - Only one clip will play at a time
+         ============================================ -->
+    <section id="audio" class="section alt-bg">
+        <h2>When is the moment when Cal Poly truly felt like home?</h2>
+        <p class="section-intro">These clips include interviews with Cal Poly students about finding community on campus. They share the experiences that helped them feel like they belonged.</p>
+
+        <!-- Hidden audio elements — triggered by clicking the images below -->
+        <audio id="audio_1"><source src="audio/1.mp3" type="audio/mpeg"></audio>
+        <audio id="audio_2"><source src="audio/Lucas Audio_01.mp3" type="audio/mpeg"></audio>
+        <audio id="audio_3"><source src="audio/3.mp3" type="audio/mpeg"></audio>
+
+        <div class="audio-board">
+            <div class="audio-speaker">
+                <img src="img/rollover/1.gif" class="rollover" alt="Alexa Benjamin, first-year biology major"
+                    onmouseover="this.src='img/rollover/1.jpg'"
+                    onmouseout="this.src='img/rollover/1.gif'"
+                    onclick="document.getElementById('audio_1').play(); return false;"
+                    ondblclick="document.getElementById('audio_1').pause(); return false;">
+                <p class="audio-label">Alexa Benjamin, first-year biology major</p>
+            </div>
+            <div class="audio-speaker">
+                <img src="img/rollover/2.gif" class="rollover" alt="Lucas Peauroi, first-year animal science major"
+                    onmouseover="this.src='img/rollover/2.jpg'"
+                    onmouseout="this.src='img/rollover/2.gif'"
+                    onclick="document.getElementById('audio_2').play(); return false;"
+                    ondblclick="document.getElementById('audio_2').pause(); return false;">
+                <p class="audio-label">Lucas Peauroi, first-year animal science major</p>
+            </div>
+            <div class="audio-speaker">
+                <img src="img/rollover/3.gif" class="rollover" alt="Emma Wilson, first-year business major"
+                    onmouseover="this.src='img/rollover/3.jpg'"
+                    onmouseout="this.src='img/rollover/3.gif'"
+                    onclick="document.getElementById('audio_3').play(); return false;"
+                    ondblclick="document.getElementById('audio_3').pause(); return false;">
+                <p class="audio-label">Emma Wilson, first-year business major</p>
+            </div>
+        </div>
+        <p class="audio-instructions">Click an image to play &nbsp;|&nbsp; Double-click to pause</p>
+    </section>
+<section class="section story-text">
+        <p>“As an RA, it is very important to help residents feel like they belong,” said Jocelyn Penaloza, an RA for the Sierra Madre dorm at Cal Poly. “It is challenging because every individual is different and has different needs, but I try to make small interactions meaningful and make events that interest them.”</p>
+
+<p>Penaloza explains that it can be challenging to deal with students who feel homesick or who don't want to participate at times, but she continues to encourage them to explore new opportunities.
+</p>
+<p>“I personally have had one-on-one conversations with my residents, trying to encourage them to join clubs, organizations, and just socialize,” she said, “but it is up to the residents to step out of their comfort zone.”
+</p>
+    </section>
+    <!-- ============================================
+         PARALLAX DIVIDER
+         - Change the background image in style.css
+         - Look for ".parallax-3"
+         ============================================ -->
+    <div class="parallax-divider parallax-3"></div>
+
+    <!-- ============================================
+         VIDEO SECTION: Embedded video player
+         - Update src to your video file path
+         - Update poster to a thumbnail image
+         ============================================ -->
+    <section id="video" class="section">
+        <h2>From new student to DJ: How Peggy Kuzimech found her place at Cal Poly</h2>
+        <p class="section-intro">This video follows a first-year student who found her sense of belonging through DJing at Cal Poly. It highlights how discovering a passion can help students build community and feel at home on campus.</p>
+        <div class="video-wrapper">
+            <video controls poster="img/poster1.jpg">
+                <source src="video/video2.mp4" type="video/mp4">
+               <track src="./video/captions.vtt" kind="subtitles" srclang="en" label="English" default>
+                Your browser does not support video.
+            </video>
+            <p class="caption">From new student to DJ: How Peggy Kuzimech found her place at Cal Poly</p>
+        </div>
+    </section>
+    <section class="section story-text">
+        <p>Finding a sense of belonging in college is a gradual process that can significantly impact a student's academic success and well-being. Chalfin wants students to recognize that it takes time to find where they belong.
+</p>
+
+<blockquote>“I think that for some students, finding a sense of belonging does take more than one year on a college campus,” he said, “It's important to understand that it's an ongoing process, and you have to be patient and open-minded to new opportunities.”
+</blockquote>
+    </section>
+
+    <!-- ============================================
+         INFOGRAPHIC SECTION (OPTIONAL)
+         - To use: delete the comment tags surrounding the section
+           below (the standalone lines that read: less-than !dash-dash
+           and dash-dash greater-than)
+         - Paste your embed code (Datawrapper, Flourish,
+           Infogram, etc.) where indicated
+         - To skip: leave this section as-is
+         ============================================ -->
+
+  
+    <section id="infogram" class="section alt-bg">
+        <h2>Learn more about the importance of finding your community</h2>
+        <p class="section-intro">With loneliness and depression affecting many college students today, this infographic presents key statistics on student mental and social connection. Using recent statistics and trends, it demonstrates how campuses involvement and supportive communities can help students feel more connected. </p>
+        <div class="infographic-wrapper">
+
+            <div style="position: relative; width: 100%; height: 0px; padding: 307.29% 0px 0px; overflow: hidden; will-change: transform;"><iframe loading="lazy" src="https://e.infogram.com/81b18392-1207-46f1-b329-41642b9a261f?src=embed&amp;embed_type=responsive_iframe" title="Note Board" allowfullscreen="" allow="fullscreen" style="position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 0px; margin: 0px;"></iframe></div><div style="padding: 8px 0px; font-family: Arial; font-size: 13px; line-height: 15px; text-align: center; border-top: 1px solid rgb(218, 218, 218); margin: 0px 30px;"><a href="https://infogram.com/note-board-1hnp27e09x0ey4g" target="_blank" style="color: rgb(152, 152, 152); text-decoration: none;">Note Board</a><br><a href="https://infogram.com" target="_blank" rel="nofollow" style="color: rgb(152, 152, 152); text-decoration: none;">Infogram</a></div>
+
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER: Credits and contact info
+         - Edit your name, date, and email below
+         ============================================ -->
+    <footer id="footer">
+        <p>Finding community on a college campus | By Gabriella Palamidessi | May 2026</p>
+        <p><a href="mailto:palamide@calpoly.edu">palamide@calpoly.edu</a></p>
+        <p> © 2026 Gabriella Palamidessi</p>
+    </footer>
+
+    <!-- ============================================
+         BACK TO TOP BUTTON
+         - Appears automatically after scrolling down
+         - No changes needed here
+         ============================================ -->
+    <button id="back-to-top" title="Back to top">&#8593; Top</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
